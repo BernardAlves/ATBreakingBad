@@ -1,0 +1,290 @@
+body{
+    background-image: url("img/wpp3.png");
+    background-size: cover;
+    background-color: black;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0; 
+    margin-bottom: 10px;
+}
+*{
+    font-family: 'Epilogue', sans-serif;
+}
+/* --------menu top-----------*/
+#menutop{
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    position: fixed;
+    top:0;
+}
+#botoes{
+    float:right
+}
+#menutop a{
+    padding: 10px;
+    float: left;
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 5px;
+    border-bottom:1px solid rgba(255, 255, 255, 0.116);
+
+}
+#menutop a:hover{
+    background-color: rgb(33, 92, 42);
+    border-bottom:2px solid whitesmoke;
+}
+/***********************************************************/
+header{
+    margin-top: 50px;
+}
+#headerlogo ,img{
+    width: 90%;
+    margin: 0 auto;
+}
+h1{
+    display: none;
+}
+#headerlogo h2{
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+    color: white;
+    text-align: center;
+}
+#container{
+    width: 99%;
+    margin: 0 auto;
+}
+nav{
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.473);
+    border-radius: 2px;
+    /* border: 5px white solid; */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.3em;
+}
+nav h2{
+    margin-bottom: 15%;
+}
+#divbusca, #divbusca2{
+    width: 100%;
+}
+#divbusca2 p{
+    text-align: center;
+}
+#divbusca2{
+    display: flex;
+    flex-direction: column;
+}
+#divbusca select{
+    width: 97%;
+}
+#divbusca select, #divbusca2 select,#divbusca2 input{
+    height: 25px;
+    text-align: center;
+    margin: 5px;
+}
+#buscaform option{
+    text-align: center;
+}
+#divbusca2 button{
+    height: 33px;
+    text-align: center;
+    margin: 5px;
+    border: rgba(0, 0, 0, 0.151) 2px solid;
+    border-radius: 5px;
+    color: white;
+    background-color:  rgb(40, 88, 51);
+}
+/* *******************************************div imdb homepage************************************************************** */
+#divimdb{
+    border: 2px solid rgb(31, 31, 31);
+    border-radius: 5px;
+    padding: 20px;
+    width: 480px;
+    color: rgb(207, 203, 203);
+    background-color: rgb(39, 39, 39);
+}
+#divimdb h2{
+    display: inline;
+    margin-right: 150px;
+}
+#divimdb img{
+    width: 180px;
+    border: 1px solid rgb(77, 77, 77);
+}
+/* ******************************aqui vão as divs de resultado personagens**************************************** */
+#main{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: initial;
+}
+
+/* **************************************resultados de personagens************************************************************** */
+/* *************************TESTANDO COM BACKGROUND IMG */
+.results{
+    background-size: cover;
+    background-position: center;
+    max-width: 40px;
+    margin: 3px;
+    border: black 2px solid;
+    max-height: 200px;
+}
+.infochar{
+    padding: 8px;
+    min-height: 95%;
+    opacity: 0;
+}
+.results:hover{
+    max-width: 200px;
+    max-height: 300px;
+}
+.results:hover > .infochar{
+    box-shadow: 0 0 70px -5px rgb(0, 0, 0);
+    transition: 0.1s ease-in-out;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.582) 50%, rgba(9,9,121,0) 100%, rgba(0,212,255,0) 100%);
+    color: white;
+    opacity: 1;
+}
+.infochar h3{
+    text-align: center;
+}
+/********************************* resultado personagem RANDOM *************************************************** */
+#randomchar{
+    border: 2px black solid;
+    background-color: black;
+}
+#randomchar img{
+    max-width: 100%;
+    max-height: 400px;
+}
+#inforandomchar{
+    color: white;
+    padding: 5px;
+    background-color: black;
+}
+/********************************resultados de episodios******************************************************************/
+#main2{
+    color: white;
+}
+
+/* div do poster da season*/
+#divseason{
+    display: flex;
+    padding: 5px;
+    background-color: black;
+}
+#divseasonimg{
+    background-position: center;
+    background-size: cover;
+    max-height: 100%;
+    width: 20%;
+    min-width: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: star;
+}
+#divseasoninfo{
+    padding-left: 11px;
+}
+
+/* div dos episodios da season */
+#divepisodes{
+    display: flex;
+    flex-direction: column;
+}
+.epiresults{
+    height: 50px;
+    margin:5px;
+    border: 2px black solid;
+    background-color: black;
+}
+.epiresults:hover{
+    height: 100%;
+    transition: 0.8s ease-in;
+}
+.epiresults:hover > .divepiinfo{
+    transition: 0.2s ease-in;
+    visibility: visible;
+    opacity: 1; 
+}    
+
+.divepiimg{
+    background-size: cover;
+    background-position: center;
+    min-height: 50px;
+    max-width: 100%;
+}
+.divepiinfo{
+    visibility: hidden;
+    opacity: 0;
+} 
+/******************ABOUT .HTML*****************/
+.about{
+    line-height: 130%;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgba(7, 7, 7, 0.918);
+    padding: 20px;
+    border-radius: 5px;
+}
+.about h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about p{
+    margin-bottom: 5px;
+}
+#divabout2 {
+    text-align: center;
+}
+.about img{
+    max-height: 60px;
+    margin-top: 15px;
+    width: 200px;
+}   
+/******************** ASSESSMENT .HTML ************************/
+#divass{
+    background-color: rgba(7, 7, 7, 0.918);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 2px;
+}
+.assessment h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.assessment{
+    text-align: justify;
+    padding: 15px;
+    line-height: 130%;
+}
+#ctt{
+    display: flex;
+}
+.cttinfo{
+    display: flex;
+}
+.cttinfo img{
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: 10px;
+}
+.cttinfo p{
+    margin: 5px 10px 0 10px;
+    display: none;
+    transition: 0.3s ease-in-out;
+} 
+.cttinfo:hover > p{
+    display: block;
+    transition: 0.3s ease-in-out;
+}

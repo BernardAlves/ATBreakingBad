@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AT - Home</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" media="screen and (min-width:620px)" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width:620px)" href="styles2.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div id="menutop">
+        <div id="botoes">
+            <a href="index.html" class="fixhome" title="Home"><i class="fas fa-home"></i></a>
+            <a href="about.html" title="About"><i class="far fa-question-circle"></i></a>
+            <a href="assessment.html" title="Rúbricas Assessment">Assessment</a>
+        </div>
+        
+    </div>
+    <div id="container">
+
+        <header>
+            <div id="headerlogo">
+                <h1>ASSESSMENT - API Breaking Bad</h1>
+                <a href="index.html">
+                    <img src="img/logo1.png" alt="Logo Breaking Bad" title="AT Homepage" />
+                </a>
+            </div>
+           
+            <nav id="nav">
+
+                <div id="divbusca" class="nav-box">
+                    <select id="buscaform" onchange="funcaoBusca()" >
+                        <option value=""> --- Search for --- </option>
+                        <option value="characters">Characters</option>
+                        <option value="episodes">Episodes</option>
+                    </select>                 
+                </div>
+                <div id="divbusca2" class="nav-box">
+                </div>
+                
+            </nav>
+        </header>
+
+        <div id="main">
+            <div id="divimdb">
+                <h2>Breaking Bad</h2>
+                <a href="https://www.imdb.com/title/tt0903747/" target="_blank"><img id="imdbbox" src="img/imdb.png" alt="imdb box" title="Breaking Bad (TV Series 2008-2013) - IMDb"></a>
+                <p id="aaa" style="font-style: italic;">Crime, Drama, Thriller  |  TV Series (2008-2013)</p>
+                <p>A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future. </p>
+            </div>
+        </div>
+        <div id="main2">
+            
+        </div>
+        
+        
+
+    </div>
+</body>
+</html>
